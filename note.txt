@@ -1,3 +1,0 @@
-run front-end:
-    - vá para a pasta onde está localizada o index.html
-    - execute: python -m http.server 5500

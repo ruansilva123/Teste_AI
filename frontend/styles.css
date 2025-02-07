@@ -3,11 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    color: #666666;
+    color: #494949;
 }
 
 section {
-    /* margin-top: 12rem; */
     width: 100%;
     height: 100vh;
     display: flex;
@@ -19,11 +18,9 @@ form {
     width: 500px;
     display: flex;
     flex-direction: column;
-    border: 1px solid #c5c5c5;
+    border: 1px solid #494949;
     padding: 2rem;
-    /* margin-top: 20rem; */
     background-color: #fff;
-    /* margin-left: 15rem; */
     border-radius: 0.3rem;
 }
 
@@ -31,9 +28,11 @@ header {
     width: 100%;
     position: absolute;
     top: 0;
-    padding: 0.5rem 3rem;
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #dfdfdf;
+    padding: 0.7rem 3rem;
+    background-color: #c7ffc3;
+    border-bottom: 1px solid #494949;
+    font-size: 32px;
+    font-weight: bold;
 }
 
 input {
@@ -48,7 +47,7 @@ input[type="file"]{
 input[type="submit"]{
     padding: 0.3rem;
     border-radius: 0.2rem;
-    border: 1px solid #979797;
+    border: 1px solid #494949;
 }
 
 input[type="submit"]:hover{
@@ -62,6 +61,8 @@ input[type="submit"]:hover{
 .description_label {
     font-size: 1rem;
     margin-bottom: 2rem;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .upload-image {
@@ -70,7 +71,7 @@ input[type="submit"]:hover{
 }
 
 .label-image{
-    border: 1px solid #c9c9c9;
+    border: 1px solid #494949;
     padding: 0.7rem 9rem;
     border-radius: 0.2rem;
     font-size: 0.8rem;
@@ -83,14 +84,16 @@ input[type="submit"]:hover{
 }
 
 .output{
-    border: 1px solid #c5c5c5;
+    border: 1px solid #494949;
     width: 600px;
     padding: 2rem;
-    height: 40rem;
+    height: 20rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-left: 15rem; */
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 0.3rem;
 }
 .output:hover{
     border: 1px solid #1a62fd;

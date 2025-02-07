@@ -3,7 +3,7 @@ $(function(){
     const submitButton = $("#submit");
     const output = $(".output");
     
-    output.text("sem status");
+    output.text("No status");
     
     submitButton.on("click", async function(event){
         event.preventDefault();
@@ -14,23 +14,6 @@ $(function(){
 
         let data = await get_data(formData, output)
         console.log(data)
-    //     $.post({
-    //         url: 'http://127.0.0.1:8000/upload-image/',
-    //         type: 'POST',
-    //         data: formData,
-    //         processData: false,
-    //         contentType: false,
-    //     })
-    //     .done(async function(response) {
-    //         console.log(response);
-    //         output.text("Upload bem-sucedido!");
-    //     })
-    //     .fail(async function(error) {
-    //         console.log(error);
-    //         output.text("Erro no upload.");
-    //     })
-    // });
-
     })
 })
 
@@ -53,6 +36,6 @@ async function get_data(data, output){
         .fail((error)=>{
             reject({"data":error})
         });
-        output.text("Erro no upload.");
+        output.text("Error to upload.");
     })
 }
